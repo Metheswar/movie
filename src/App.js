@@ -7,12 +7,12 @@ function App() {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const apiKey = 'e984e01603eb95476c413e332ec92b00'; // Replace with your API key
+  const apiKey = 'e984e01603eb95476c413e332ec92b00'; 
 
 useEffect(()=>{
   const handleSearch = async () => {
     try {
-      // Fetch movie data based on the search query
+     
       const response = await fetch(
         `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`
       );
